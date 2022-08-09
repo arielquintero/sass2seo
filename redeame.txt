@@ -1,0 +1,9 @@
+Comentario para poder darle otros estilos
+
+Lineas en la hoja de estilo /css/style.css
+
+linea 12
+
+linea 200
+
+linea 226

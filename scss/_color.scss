@@ -1,0 +1,11 @@
+$color2: #f6f4e6;
+$color4: #647daf;
+$color5: #b2a5c0;
+
+
+// Uso de map-get() para usar variables
+
+$colores: (
+  "negro"  : rgb(0,0,0),
+  "blanco" : white,  
+);

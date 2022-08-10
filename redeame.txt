@@ -7,3 +7,18 @@ linea 12
 linea 200
 
 linea 226
+
+//------------- MIERCOLES 10082022 ---------
+
+Para el desafio de sass y seo
+
+aplique @extend en la linea 371 de style.scss
+extendiendo la clase .textTitle
+
+en los archivos _mixin.scss
+linea 264 animacion de gradiente
+linea 139 fondo de las pages
+linea 101 aplique a los enlaces del menu hamburguesa
+en el archivo _color.scss hice uso de variable declarando colores y realice uso de un map
+
+Reduje el tanano del archivo style.scss lo mas que pude pero creeria que se puede reducir mas.

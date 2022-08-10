@@ -1,4 +1,6 @@
 .styleDot, .navMenu a:nth-child(1):hover ~ .dot, .navMenu a:nth-child(2):hover ~ .dot, .navMenu a:nth-child(3):hover ~ .dot, .navMenu a:nth-child(4):hover ~ .dot, .navMenu a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(-31.56em);
+  transform: translateX(-31.56em);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1; }
@@ -65,7 +67,7 @@ a.portada {
     font-size: 2em;
     font-weight: 600;
     color: white;
-    padding-left: .7em; }
+    padding-left: 0.7em; }
 
 .navMenu {
   display: flex;
@@ -78,6 +80,18 @@ a.portada {
     transition: all 0.2s ease-in-out; }
     .navMenu a:hover {
       color: #3aa5fda1; }
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(-26em);
+    transform: translateX(-26em); }
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(-19.75em);
+    transform: translateX(-19.75em); }
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(-11.62em);
+    transform: translateX(-11.62em); }
+  .navMenu a:nth-child(5):hover ~ .dot {
+    -webkit-transform: translateX(-3.12em);
+    transform: translateX(-3.12em); }
   .navMenu .dot {
     width: 6px;
     height: 6px;
@@ -88,26 +102,6 @@ a.portada {
     transform: translateX(0);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(-31.56em);
-  transform: translateX(-31.56em); }
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(-26em);
-  transform: translateX(-26em); }
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(-19.75em);
-  transform: translateX(-19.75em); }
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(-11.62em);
-  transform: translateX(-11.62em); }
-
-.navMenu a:nth-child(5):hover ~ .dot {
-  -webkit-transform: translateX(-3.12em);
-  transform: translateX(-3.12em); }
 
 .styleMain {
   background-repeat: no-repeat;
@@ -184,7 +178,7 @@ figure {
     transform: perspective(37.5rem) rotateY(180deg);
     backface-visibility: hidden;
     overflow: auto; }
-    figure .trasera .titulo {
+    figure .trasera .referencia {
       color: white;
       font-weight: 700;
       margin-bottom: 20px;
@@ -217,31 +211,28 @@ figure {
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25); }
   .contenedor_tarjeta:nth-child(1) figure .trasera {
     background: rgba(223, 234, 241, 0.7);
-    background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, #0f6390 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, #0f6390));
-    background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, #0f6390 100%);
-    background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, #0f6390 100%);
-    background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, #0f6390 100%);
-    background: linear-gradient(to top, rgba(223, 234, 241, 0.7) 0%, #0f6390 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 ); }
+    background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgba(15, 99, 144, 0.7) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, rgba(15, 99, 144, 0.7)));
+    background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgba(15, 99, 144, 0.7) 100%);
+    background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgba(15, 99, 144, 0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgba(15, 99, 144, 0.7) 100%);
+    background: linear-gradient(to top, rgba(223, 234, 241, 0.7) 0%, rgba(15, 99, 144, 0.7) 100%); }
   .contenedor_tarjeta:nth-child(2) figure .trasera {
     background: rgba(251, 232, 202, 0.7);
-    background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, #192c48 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, #192c48));
-    background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, #192c48 100%);
-    background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, #192c48 100%);
-    background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, #192c48 100%);
-    background: linear-gradient(to top, rgba(251, 232, 202, 0.7) 0%, #192c48 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 ); }
+    background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgba(25, 44, 72, 0.7) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, rgba(25, 44, 72, 0.7)));
+    background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgba(25, 44, 72, 0.7) 100%);
+    background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgba(25, 44, 72, 0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgba(25, 44, 72, 0.7) 100%);
+    background: linear-gradient(to top, rgba(251, 232, 202, 0.7) 0%, rgba(25, 44, 72, 0.7) 100%); }
   .contenedor_tarjeta:nth-child(3) figure .trasera {
     background: rgba(95, 58, 53, 0.7);
-    background: -moz-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, #dd202f 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95, 58, 53, 0.7)), color-stop(100%, #dd202f));
-    background: -webkit-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, #dd202f 100%);
-    background: -o-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, #dd202f 100%);
-    background: -ms-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, #dd202f 100%);
-    background: linear-gradient(to top, rgba(95, 58, 53, 0.7) 0%, #dd202f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 ); }
+    background: -moz-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgba(221, 32, 47, 0.7) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95, 58, 53, 0.7)), color-stop(100%, rgba(221, 32, 47, 0.7)));
+    background: -webkit-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgba(221, 32, 47, 0.7) 100%);
+    background: -o-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgba(221, 32, 47, 0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgba(221, 32, 47, 0.7) 100%);
+    background: linear-gradient(to top, rgba(95, 58, 53, 0.7) 0%, rgba(221, 32, 47, 0.7) 100%); }
   .contenedor_tarjeta:nth-child(4) figure .trasera {
     background: rgba(53, 95, 86, 0.7);
     background: -moz-linear-gradient(top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%);
@@ -249,8 +240,7 @@ figure {
     background: -webkit-linear-gradient(top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%);
     background: -o-linear-gradient(top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%);
     background: -ms-linear-gradient(top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%);
-    background: linear-gradient(to top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#dd202f', GradientType=0 ); }
+    background: linear-gradient(to top, rgba(53, 95, 86, 0.7) 0%, rgba(145, 32, 221, 0.7) 100%); }
 
 .navbar-logo {
   display: inline-block;
@@ -275,7 +265,6 @@ figure {
   padding: 10px 16px;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  /* color:#fff; */
   transition: all 0.9s ease; }
   .botonHome:hover {
     display: inline-block;
@@ -329,8 +318,7 @@ figure {
   border-radius: 5%;
   border: none; }
 
-.textClient,
-.textTitle {
+.textTitle, .textClient {
   color: #b2a5c0;
   filter: brightness(150%);
   text-align: left; }

@@ -1,4 +1,71 @@
-@mixin background-Fondos ($img) {
+@mixin background-Fondos($img) {
   background-image: linear-gradient(rgba(map-get($colores, "negro"), 0.6), rgba(map-get($colores, "negro"), 0.6)),
     url($img);
+}
+
+// MIXIN PARA ANIMACION TARJETA PAGES RECURSOS.HTML
+@mixin animacion-gradient($num, $fromColor, $toColor) {
+  &:nth-child(#{$num}) {
+    figure {
+      .trasera {
+        background: $fromColor;
+        background: -moz-linear-gradient(top, $fromColor 0%, $toColor 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, $fromColor), color-stop(100%, $toColor));
+        background: -webkit-linear-gradient(top, $fromColor 0%, $toColor 100%);
+        background: -o-linear-gradient(top, $fromColor 0%, $toColor 100%);
+        background: -ms-linear-gradient(top, $fromColor 0%, $toColor 100%);
+        background: linear-gradient(to top, $fromColor 0%, $toColor 100%);
+        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(223, 234, 241, 0.7)', endColorstr='rgba(15, 99, 144, 0.7)', GradientType=0 );
+      }
+    }
+  }
+}
+
+// MIXIN ANIMACION ENLACES MENU HAMBURGUESA
+
+// MIXIN SIN PARAMETROS
+
+@mixin one-enlace {
+  a:nth-child(1) {
+    &:hover {
+      ~ {
+        .dot {
+          @extend .styleDot;
+        }
+      }
+    }
+  }
+}
+
+// MIXIN CON PARAMETROS
+
+@mixin enlace-two-to-five($num, $translateX) {
+  a:nth-child(#{$num}) {
+    &:hover {
+      ~ {
+        .dot {
+          @extend .styleDot;
+          -webkit-transform: translateX($translateX);
+          transform: translateX($translateX);
+        }
+      }
+    }
+  }
+}
+// FIN MIXIN ANIMACION ENLACES MENU HAMBURGUESA
+
+
+// MIXIN COLOR TITULOS PARRAFOS
+@mixin colorText($colorText) {
+  .principal,
+  .secundario,
+  .terceario,
+  .lead,
+  .card-title,
+  .card-text,
+  .formText,
+  .form-label,
+  .form-check-label {
+    color: $colorText;
+  }
 }

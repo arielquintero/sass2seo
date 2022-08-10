@@ -22,3 +22,5 @@ linea 101 aplique a los enlaces del menu hamburguesa
 en el archivo _color.scss hice uso de variable declarando colores y realice uso de un map
 
 Reduje el tanano del archivo style.scss lo mas que pude pero creeria que se puede reducir mas.
+
+Agergue los keywords y content en los html

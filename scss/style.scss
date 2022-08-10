@@ -80,12 +80,16 @@ a.portada {
     font-size: 2em;
     font-weight: 600;
     color: map-get($colores, "blanco");
+    padding-left: .7em;
   }
 }
 
 .navMenu {
   display: flex;
   text-align: end;
+  .nav-item {
+    align-self: flex-start;
+  }
   a {
     color: $color2;
     -webkit-transition: all 0.2s ease-in-out;
@@ -540,7 +544,10 @@ figure {
 .widthForm {
   max-width: 80%;
 }
-
+.btn-accion {
+  display: flex;
+  align-self: flex-start;
+}
 .botonForm,
 .botonHome {
   background: $color4;
@@ -631,8 +638,8 @@ figure {
   }
   // NAVBAR
   .collapse {
-    display: flex;
-    justify-content: start;
+    text-align: start;
+    // justify-content: start;
   }
   .dot {
     display: none;

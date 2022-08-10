@@ -64,11 +64,14 @@ a.portada {
   .styleNav .navbar-logo {
     font-size: 2em;
     font-weight: 600;
-    color: white; }
+    color: white;
+    padding-left: .7em; }
 
 .navMenu {
   display: flex;
   text-align: end; }
+  .navMenu .nav-item {
+    align-self: flex-start; }
   .navMenu a {
     color: #f6f4e6;
     -webkit-transition: all 0.2s ease-in-out;
@@ -338,6 +341,10 @@ figure {
 .widthForm {
   max-width: 80%; }
 
+.btn-accion {
+  display: flex;
+  align-self: flex-start; }
+
 .botonForm,
 .botonHome {
   background: #647daf;
@@ -391,7 +398,6 @@ figure {
   .contenedor_tarjeta:hover figure {
     transform: perspective(37.5rem) rotateY(0deg); }
   .collapse {
-    display: flex;
-    justify-content: start; }
+    text-align: start; }
   .dot {
     display: none; } }
